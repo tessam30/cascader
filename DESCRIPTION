@@ -1,11 +1,36 @@
-Package: cascader
+Package: cascade
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Generate Standard SI Cascade Plots
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
-Encoding: UTF-8
+Authors@R: c(
+    person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
+    person("Karishma", "Srinkanth", , "ksrinkanth@usaid.gov", c("aut"))
+   )
+Maintainer: The package maintainer <tessam@usaid.gov>
+Description: This package generates different types of cascade plots.
+    Using a MER structured data set as an input, cascade will generate
+    a series of cascade plots. 
+License: MIT + file LICENSE
+Depends: 
+    R (>= 3.4.2)
+Imports:
+    dplyr,
+    extrafont,
+    forcats,
+    ggplot2 (>= 3.3.0),
+    knitr,
+    magrittr,
+    scales,
+    stringr,
+    tidyr,
+    tidyselect,
+    usethis
+Remotes: 
+  USAID-OHA-SI/gagglr,
+  USAID-OHA-SI/glamr, 
+  USAID-OHA-SI/glitr,
+  USAID-OHA-SI/gophr
 LazyData: true
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+VignetteBuilder: knitr
