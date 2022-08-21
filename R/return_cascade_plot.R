@@ -33,7 +33,7 @@ return_cascade_plot <- function(msd_df, export = TRUE, path = "Images") {
   if (!exists("data_source")) {
     stop(
       usethis::ui_code_block("data_source <-
-                                glamr::source_info(genie_path) %>% glue::glue(., '\nCreated by: USAID OHA SI Team')"),
+                                gophr::source_info(genie_path) %>% glue::glue(., '\nCreated by: USAID OHA SI Team')"),
       usethis::ui_todo("Run the code chunk above with the appropriate msd_path to set the data source object.")
     )
   }

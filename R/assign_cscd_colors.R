@@ -3,8 +3,8 @@
 #' Assign cascade colors
 #'
 #' @param .data data frame resulting from `return_cascade`
-#'
 #' @return `df_cscd_viz` data frame
+#' @export
 #'
 #'
 assign_cscd_colors <- function(.data) {

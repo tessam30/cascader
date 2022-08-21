@@ -5,6 +5,7 @@
 #' @param cscd_df cascade value from the `return_cascade_plot`
 #'
 #' @return a data frame of annotation values
+#' @export
 #'
 #'
 create_annotations <- function(.data, cscd_df) {
