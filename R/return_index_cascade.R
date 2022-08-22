@@ -4,8 +4,7 @@
 #'
 #' @return data frame of prepared index cascade
 #'
-return_index_cascade <- function(.data){
-
+return_index_cascade <- function(.data) {
   df_index_cscd <-
     .data %>%
     fltr_mods(., agency = "USAID") %>%
@@ -15,7 +14,6 @@ return_index_cascade <- function(.data){
     assign_mods_colors()
 
   return(df_index_cscd)
-
 }
 
 
@@ -48,10 +46,10 @@ recode_mods <- function(.data) {
   .data %>%
     dplyr::mutate(
       standardizeddisaggregate = dplyr::recode(standardizeddisaggregate,
-                                               "1:Age/Sex/IndexCasesOffered" = "Offered",
-                                               "2:Age/Sex/IndexCasesAccepted" = "Accepted",
-                                               "3:Age Aggregated/Sex/Contacts" = "Contacts",
-                                               "4:Age/Sex/Result" = "Results"
+        "1:Age/Sex/IndexCasesOffered" = "Offered",
+        "2:Age/Sex/IndexCasesAccepted" = "Accepted",
+        "3:Age Aggregated/Sex/Contacts" = "Contacts",
+        "4:Age/Sex/Result" = "Results"
       ),
       statushiv = dplyr::case_when(
         is.na(otherdisaggregate) & statushiv == "Negative" ~ "Documented Negative",

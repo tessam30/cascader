@@ -12,11 +12,10 @@
 #'
 #' @examples
 #' \dontrun{
-#' plt <- batch_plot(df_sub, cscd_num = 1, export = T, imgtype = ".png", imgpath = "Images")}
+#' plt <- batch_plot(df_sub, cscd_num = 1, export = T, imgtype = ".png", imgpath = "Images")
+#' }
 #'
-#'
-batch_plot <- function(msd_df, cscd_num, export = TRUE, imgtype = ".png", imgpath = "Images"){
-
+batch_plot <- function(msd_df, cscd_num, export = TRUE, imgtype = ".png", imgpath = "Images") {
   cscd_num <- as.numeric(cscd_num)
 
   # Check the value entered is valid, if not return a useful error
@@ -42,7 +41,7 @@ batch_plot <- function(msd_df, cscd_num, export = TRUE, imgtype = ".png", imgpat
   # Plot the cascade
   suppressWarnings(p <- plot_cascade(df_viz, df_annot, cscd_num, p_title))
 
-  if(export == TRUE){
+  if (export == TRUE) {
     p_title <- gsub(" ", "_", p_title)
     glitr::si_save(glue::glue("{imgpath}/{p_title}_cascade{imgtype}") %>% stringr::str_to_lower(.), p, scale = 1.25)
   } else {
@@ -63,15 +62,14 @@ batch_plot <- function(msd_df, cscd_num, export = TRUE, imgtype = ".png", imgpat
 #'
 #' @examples
 #' \dontrun{
-#' plt <- batch_cascade_plot(df_sub, imgtype = ".png", imgpath = "Images")}
+#' plt <- batch_cascade_plot(df_sub, imgtype = ".png", imgpath = "Images")
+#' }
 #'
 batch_cascade_plot <- function(msd_df, imgtype = ".jpeg", imgpath = "Images") {
-  cscd_plts <- map(1:13, ~batch_plot(msd_df, .x,
+  cscd_plts <- map(1:13, ~ batch_plot(msd_df, .x,
     export = TRUE,
     imgtype = imgtype,
     imgpath = imgpath
   ))
   return(cscd_plts)
 }
-
-

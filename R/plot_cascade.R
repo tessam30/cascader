@@ -53,7 +53,6 @@ targets_color <- "#939598"
 #' @return a ggplot2 object
 #'
 plot_cascade <- function(.data, df_annot, cscd_num, p_title) {
-
   pnudge <- 0.1
   p <- .data %>%
     dplyr::filter(period == max(period)) %>%

@@ -6,7 +6,7 @@
 #' @export
 #'
 #'
-create_index_cascade <- function(.data){
+create_index_cascade <- function(.data) {
   return_index_cascade() %>%
-  plot_index_cascade()
+    plot_index_cascade()
 }

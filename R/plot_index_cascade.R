@@ -13,14 +13,14 @@ plot_index_cascade <- function(.data) {
     ggplot2::geom_text(
       data = . %>% dplyr::filter(standardizeddisaggregate == "Results"),
       aes(y = results, label = scales::comma(results, 1)),
-      size = 12/ggplot2::.pt,
+      size = 12 / ggplot2::.pt,
       family = font_fam,
       position = position_stack(vjust = .9)
     ) +
     ggplot2::geom_text(
       data = . %>% dplyr::filter(standardizeddisaggregate != "Results"),
       aes(y = results, label = scales::comma(results, 1)),
-      size = 12/ggplot2::.pt,
+      size = 12 / ggplot2::.pt,
       family = font_fam,
       vjust = -.125
     ) +
@@ -36,7 +36,3 @@ plot_index_cascade <- function(.data) {
       caption = data_source
     )
 }
-
-
-
-

@@ -14,7 +14,8 @@
 #'
 #' @examples
 #' \dontrun{
-#' return_cascade_plot(df_sub, export = T, path = "Images")}
+#' return_cascade_plot(df_sub, export = T, path = "Images")
+#' }
 #'
 return_cascade_plot <- function(msd_df, export = TRUE, path = "Images") {
   print(glue::glue_col("{yellow Please enter the cascade you would like to create.}"))
@@ -69,7 +70,7 @@ return_cascade_plot <- function(msd_df, export = TRUE, path = "Images") {
   suppressWarnings(p <- plot_cascade(df_viz, df_annot, cscd_num, p_title))
 
   # Export the plot as a standardized SI png
-  if(export == TRUE){
+  if (export == TRUE) {
     p_title <- gsub(" ", "_", p_title)
     glitr::si_save(glue::glue("{path}/{p_title}_cascade.png") %>% stringr::str_to_lower(.), p, scale = 1.25)
   } else {

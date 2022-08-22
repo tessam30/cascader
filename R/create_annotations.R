@@ -9,7 +9,6 @@
 #'
 #'
 create_annotations <- function(.data, cscd_df) {
-
   where <- utils::globalVariables("where")
 
   annot_df <-
