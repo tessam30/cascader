@@ -7,9 +7,9 @@
 create_annotations(.data, cscd_df)
 }
 \arguments{
-\item{.data}{munged data frame resulting from `return_cascade_plot`}
+\item{.data}{munged data frame resulting from \code{return_cascade_plot}}
 
-\item{cscd_df}{cascade value from the `return_cascade_plot`}
+\item{cscd_df}{cascade value from the \code{return_cascade_plot}}
 }
 \value{
 a data frame of annotation values

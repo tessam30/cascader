@@ -7,7 +7,7 @@
 \format{
 A list of all disaggregates needed for index
 \describe{
-  \item{disag_mods}{disag modalities list}
+\item{disag_mods}{disag modalities list}
 }
 }
 \usage{

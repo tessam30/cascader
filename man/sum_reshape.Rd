@@ -9,7 +9,7 @@ sum_reshape(.data, ...)
 \arguments{
 \item{.data}{MSD data set}
 
-\item{...}{additional parameters to pass to `group_by`}
+\item{...}{additional parameters to pass to \code{group_by}}
 }
 \value{
 passes through a reshaped data frame

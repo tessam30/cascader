@@ -7,7 +7,7 @@
 \format{
 A list of the indicators to keep
 \describe{
-  \item{keep_ind}{indicator list}
+\item{keep_ind}{indicator list}
 }
 }
 \usage{

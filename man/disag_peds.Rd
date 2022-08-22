@@ -7,7 +7,7 @@
 \format{
 A list of all disaggregates needed for peds and TN cascades
 \describe{
-  \item{disag_peds}{disag list}
+\item{disag_peds}{disag list}
 }
 }
 \usage{

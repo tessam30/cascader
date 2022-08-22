@@ -7,10 +7,10 @@
 assign_cscd_colors(.data)
 }
 \arguments{
-\item{.data}{data frame resulting from `return_cascade`}
+\item{.data}{data frame resulting from \code{return_cascade}}
 }
 \value{
-`df_cscd_viz` data frame
+\code{df_cscd_viz} data frame
 }
 \description{
 Assign cascade colors

@@ -17,7 +17,7 @@ return_cascade_plot(msd_df, export = TRUE, path = "Images")
 returns a ggplot2 object
 }
 \description{
-`return_cascade_plot` is a wrapper function that lets a user select between
+\code{return_cascade_plot} is a wrapper function that lets a user select between
 13 different cascade plots. Valid entries must fall between 1 and 10. The
 function will plot the selected cascade and return a list of data underlying
 the plot.

@@ -13,7 +13,7 @@ plot_title(cscd_num)
 cascade title
 }
 \description{
-`plot_title` converts the cascade selection number
+\code{plot_title} converts the cascade selection number
 into a title that is used in the ggplot object. The
 options available are listed in the plot_name data.
 }

@@ -15,7 +15,7 @@ batch_plot(
 \arguments{
 \item{msd_df}{msd based data frame to be passed through cascade call}
 
-\item{cscd_num}{number from the cascade plot see `plot_name` for a crosswalk}
+\item{cscd_num}{number from the cascade plot see \code{plot_name} for a crosswalk}
 
 \item{export}{logical to control saving of plot, TRUE by default}
 

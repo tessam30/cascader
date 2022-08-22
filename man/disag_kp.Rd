@@ -7,7 +7,7 @@
 \format{
 A list of all disaggregates needed for kp cascade
 \describe{
-  \item{disag_kp}{disag kp list}
+\item{disag_kp}{disag kp list}
 }
 }
 \usage{

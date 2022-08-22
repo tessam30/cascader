@@ -3,27 +3,27 @@
 \name{plot_cascade}
 \alias{plot_cascade}
 \title{Plot Cascade
-`plot_cascade` is a ggplot2-based plot that arranges, annotates and
+\code{plot_cascade} is a ggplot2-based plot that arranges, annotates and
 plots data from the 90-90-90 cascade. Four inputs are required to create
 a valid plot.}
 \usage{
 plot_cascade(.data, df_annot, cscd_num, p_title)
 }
 \arguments{
-\item{.data}{dataframe that is the result of `return_cascade` and `assign_cscd_colors`}
+\item{.data}{dataframe that is the result of \code{return_cascade} and \code{assign_cscd_colors}}
 
-\item{df_annot}{annotation dataframe created from the `return_cascade_plot` function}
+\item{df_annot}{annotation dataframe created from the \code{return_cascade_plot} function}
 
 \item{cscd_num}{cascade number selected by the user}
 
-\item{p_title}{plot title derived from the `cscd_num`}
+\item{p_title}{plot title derived from the \code{cscd_num}}
 }
 \value{
 a ggplot2 object
 }
 \description{
 Plot Cascade
-`plot_cascade` is a ggplot2-based plot that arranges, annotates and
+\code{plot_cascade} is a ggplot2-based plot that arranges, annotates and
 plots data from the 90-90-90 cascade. Four inputs are required to create
 a valid plot.
 }

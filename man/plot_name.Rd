@@ -7,7 +7,7 @@
 \format{
 A list of the plots available to the user
 \describe{
-  \item{plot_name}{cascade names}
+\item{plot_name}{cascade names}
 }
 }
 \usage{
