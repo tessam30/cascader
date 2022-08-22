@@ -18,7 +18,7 @@ You can install the development version of cascade from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("USAID-OHA-SI/cascade")
+devtools::install_github("tessam30/cascade")
 ```
 
 ## Example
